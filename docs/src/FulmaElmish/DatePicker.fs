@@ -121,7 +121,7 @@ Here is the different options you can set in the Config element:
 An alternative to the picker config in the view above might be.
 
 ```fsharp
-let pickerConfig: DatePicker.Types.Config<'Msg>  = 
+let pickerConfig: DatePicker.Types.Config<Msg>  = 
         { OnChange = DatePickerChanged
           Local = Date.Local.englishUK
           DatePickerStyle = [ Position PositionOptions.Absolute
