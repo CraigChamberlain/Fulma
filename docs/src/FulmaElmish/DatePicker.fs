@@ -117,4 +117,17 @@ Here is the different options you can set in the Config element:
 - `OnChange : State * (DateTime option) -> 'Msg`: Message to dispatch when a new date is selected
 - `Local : Date.Local.Localization`: Local used to generated the calendar
 - `DatePickerStyle : ICSSProp list`: Inline style used to display the calendar box
+
+An alternative to the picker config in the view above might be.
+
+```fsharp
+let pickerConfig: DatePicker.Types.Config<'Msg>  = 
+        { OnChange = DatePickerChanged
+          Local = Date.Local.englishUK
+          DatePickerStyle = [ Position PositionOptions.Absolute
+                              ZIndex 100
+                              MaxWidth "450px" ] }
+
+
                         """ ]
+
