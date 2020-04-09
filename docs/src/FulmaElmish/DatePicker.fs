@@ -118,16 +118,17 @@ Here is the different options you can set in the Config element:
 - `Local : Date.Local.Localization`: Local used to generated the calendar
 - `DatePickerStyle : ICSSProp list`: Inline style used to display the calendar box
 
-An alternative to the picker config in the view above might be.
+For example:
 
 ```fsharp
+// Custom alternative to defaultConfig 
 let pickerConfig: DatePicker.Types.Config<Msg>  = 
         { OnChange = DatePickerChanged
           Local = Date.Local.englishUK
           DatePickerStyle = [ Position PositionOptions.Absolute
                               ZIndex 100
                               MaxWidth "450px" ] }
-
+```
 
                         """ ]
 
