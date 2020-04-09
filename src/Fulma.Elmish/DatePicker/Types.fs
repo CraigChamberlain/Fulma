@@ -29,7 +29,7 @@ module Types =
           DatePickerStyle : CSSProp list }
 
     let defaultConfig onChangeMsg =
-        { OnChange = DatePickerChanged
+        { OnChange = onChangeMsg
           Local = Date.Local.englishUK
           DatePickerStyle = [ Position PositionOptions.Absolute
                               ZIndex 100
